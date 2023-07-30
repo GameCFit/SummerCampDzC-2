@@ -37,11 +37,21 @@ namespace DZ2
             //Ищем самый большой параметр
             foreach (Hero hero in heroes)
             {
-                favoriteHeroes[0] = hero.MatchesNumber > favoriteHeroes[0].MatchesNumber ? hero : favoriteHeroes[0];
-                notFavoriteHeroes[0] = hero.MatchesNumber < notFavoriteHeroes[0].MatchesNumber ? hero : notFavoriteHeroes[0];
-                successfulHeroes[0] = hero.WinRating() > successfulHeroes[0].WinRating() ? hero : successfulHeroes[0];
-                notSuccessfulHeroes[0] = hero.WinRating() < notSuccessfulHeroes[0].WinRating() ? hero : notSuccessfulHeroes[0];
-                winsRowHeroes[0] = hero.WinsRow() > winsRowHeroes[0].WinsRow() ? hero : winsRowHeroes[0];
+                favoriteHeroes[0] = hero.MatchesNumber > favoriteHeroes[0].MatchesNumber ? 
+                               hero : 
+                               favoriteHeroes[0];
+                notFavoriteHeroes[0] = hero.MatchesNumber < notFavoriteHeroes[0].MatchesNumber ?
+                    hero :
+                    notFavoriteHeroes[0];
+                successfulHeroes[0] = hero.WinRating() > successfulHeroes[0].WinRating() ?
+                    hero :
+                    successfulHeroes[0];
+                notSuccessfulHeroes[0] = hero.WinRating() < notSuccessfulHeroes[0].WinRating() ?
+                    hero :
+                    notSuccessfulHeroes[0];
+                winsRowHeroes[0] = hero.WinsRow() > winsRowHeroes[0].WinsRow() ?
+                    hero :
+                    winsRowHeroes[0];
             }
 
             //Ищем повторяющиеся
